@@ -1,3 +1,124 @@
+/* reset styles */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+/* ================ */
 .hero {
-  background-color: rgb(96, 161, 225);
+  background-color: #06071b;
+  background-image: url(../img/hero-page/iPhone\ X\ Flying\ Mockup\ Left\ View\ label.png),
+    url(../img/hero-page/iphoneX-main.png);
+  background-repeat: no-repeat;
+  background-position: right 92px bottom, right 55px bottom -29px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-container {
+  padding-top: 145px;
+  padding-bottom: 145px;
+}
+
+.hero-title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 62px;
+  gap: 14px;
+}
+
+.hero-list-item {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: normal;
+  display: flex;
+  transition: color 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.hero-list-item:hover {
+  color: #d4d2d2;
+}
+
+.hero-list-item::before {
+  margin-right: 4px;
+  content: '';
+  background-image: url(../img/hero-page/dashicons_arrow-right-alt2.svg);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.hero-btn {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  width: 200px;
+  height: 42px;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%);
+  transition: border 250ms ease-in-out, background 250ms ease-in-out;
+}
+
+.hero-btn:hover {
+  border: 1px solid var(--LINEAR, #00c5eb);
+  background: #06071b;
+}
+.hero-btn:active {
+  background: linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%);
+  transition: border 250ms ease-in-out, background 250ms ease-in-out;
 }
