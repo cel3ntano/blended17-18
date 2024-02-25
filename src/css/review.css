@@ -1,3 +1,23 @@
-.review {
-  background-color: orange;
+.review-container {
+  display: block;
+  width: 1280px;
+  height: 612px;
+}
+.review-second-title {
+  width: 368px;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.costumers-name {
+  width: 72px;
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
